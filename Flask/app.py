@@ -56,7 +56,7 @@ def name1():
     # return result
     age = int(age)
     if age > 18:
-        return 'Welcome to the site, '+ name + '!'
+        return 'Welcome to the site if you are 18+, '+ name + '!'
     else:
         return 'Sorry, you are too young to use this site.'
 

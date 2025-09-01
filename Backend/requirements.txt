@@ -1,0 +1,5 @@
+# it has a list of all the packages required for the project.
+flask
+pymongo
+dnspython
+python-dotenv

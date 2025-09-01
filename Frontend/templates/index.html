@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <p>Add Todos</p>
+    <!-- jinja syntax - template engine which is used by flask -->
+    
+    <div class="centred">
+      <form action="/submit"  method="POST">
+        <label for="Item_name">Item Name</label>
+        <input
+          type="text"
+          name="Item_name"
+          id="Item_name"
+          placeholder="Enter your Item"
+        />
+        <br />
+        <!-- <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="name"
+          placeholder="Enter your email"
+        /> -->
+        <br />
+        <label for="Item_Description">Item Description</label>
+        <input
+          type="text"
+          name="Item_Description"
+          id="Item_Description"
+          placeholder="Enter your Item Description"
+        />
+        <br />
+        <!-- <label for="confirm_password">Confirm Password</label>
+        <input
+          type="password"
+          name="confirm_password"
+          id="confirm_password"
+          placeholder="confirm your password"
+        /> -->
+        <br /> 
+        <input type="submit" value="Submit" />
+      </form>
+
+      <a href="get_data"><button>View Data</button></a>
+    </div>
+
+  </body>
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+    p {
+      text-align: center;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+    }
+
+    .centred {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding:10px;
+    }
+  </style>
+</html>
